@@ -1,0 +1,48 @@
+body {
+    background-color: hsl(218, 23%, 16%);
+    font-weight: 800;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+   
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 450px;
+}
+
+.card .conselho-numero {
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.card .conselho { 
+    color: hsl(193, 38%, 86%);
+    font-size: 40px;
+    text-align: center;
+    padding: 23px;
+}
+
+.divisor {
+    width: 100%;
+}
+
+.botao {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(150, 100%, 66%);
+    transform: translateY(85%);
+}
+
