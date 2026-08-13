@@ -44,5 +44,31 @@ body {
     border: none;
     background-color: hsl(150, 100%, 66%);
     transform: translateY(85%);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s;
 }
 
+.botao:hover {
+    box-shadow: 0 0 25px hsl(150, 100%, 66%);
+    transform: translateY(85%) scale(1.1); /* Aumenta levemente ao passar o mouse */
+}
+
+.botao:active {
+    transform: translateY(85%) scale(0.9);
+}
+
+@media (max-width: 600px) {
+    .card {
+        max-width: 90%; /* Ocupa a tela quase toda no mobile */
+        padding: 30px 15px;
+    }
+    
+    .card .conselho {
+        font-size: 28px; /* Reduz o tamanho da fonte */
+    }
+
+    /* Troca a imagem do divisor para a versão mobile */
+    .divisor {
+        content: url('../images/pattern-divider-mobile.svg');
+    }
+}   
